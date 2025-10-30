@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Resume · Arun Challa</title>
+  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {50:'#ecfeff',100:'#cffafe',200:'#a5f3fc',300:'#67e8f9',400:'#22d3ee',500:'#06b6d4',600:'#0891b2',700:'#0e7490',800:'#155e75',900:'#164e63'}
+          },
+          boxShadow: { glow: '0 10px 30px rgba(6,182,212,.25)' }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    html{scroll-behavior:smooth}
+    .caret::after{content:'|';animation:blink 1s step-start infinite}
+    @keyframes blink{50%{opacity:0}}
+  </style>
+
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-brand-300/40">
+
+<header class="sticky top-0 z-50 backdrop-blur bg-slate-950/70 border-b border-slate-800">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 py-3 flex items-center gap-6">
+    <a href="index.html" class="font-semibold tracking-tight">ARUN<span class="text-brand-400">·</span>CHALLA</a>
+    <nav class="ml-auto hidden md:flex gap-6 text-sm text-slate-300">
+      <a href="projects.html" class="hover:text-white">Projects</a>
+      <a href="resume.html" class="hover:text-white">Resume</a>
+      <a href="contact.html" class="hover:text-white">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-4 md:px-6">
+    <h1 class="text-3xl md:text-4xl font-bold">Resume</h1>
+    <p class="mt-3 text-slate-300">Download a PDF copy of my resume or preview it below.</p>
+    <div class="mt-6 flex gap-3">
+      <a href="assets/Arun-Challa-Resume.pdf" class="px-5 py-2 rounded-xl bg-brand-500 hover:bg-brand-400 text-slate-950 font-semibold shadow-glow" download>Download PDF</a>
+    </div>
+    <div class="mt-8 rounded-2xl border border-slate-800 overflow-hidden bg-slate-900/50">
+      <iframe src='assets/Arun-Challa-Resume.pdf' class='w-full' style='height:80vh'></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="py-8 text-center text-xs text-slate-500">
+  © <span id="year"></span> Arun Challa · Built with Tailwind · Hosted on GitHub Pages
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+
+</body>
+</html>

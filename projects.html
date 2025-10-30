@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Projects · Arun Challa</title>
+  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {50:'#ecfeff',100:'#cffafe',200:'#a5f3fc',300:'#67e8f9',400:'#22d3ee',500:'#06b6d4',600:'#0891b2',700:'#0e7490',800:'#155e75',900:'#164e63'}
+          },
+          boxShadow: { glow: '0 10px 30px rgba(6,182,212,.25)' }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    html{scroll-behavior:smooth}
+    .caret::after{content:'|';animation:blink 1s step-start infinite}
+    @keyframes blink{50%{opacity:0}}
+  </style>
+
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-brand-300/40">
+
+<header class="sticky top-0 z-50 backdrop-blur bg-slate-950/70 border-b border-slate-800">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 py-3 flex items-center gap-6">
+    <a href="index.html" class="font-semibold tracking-tight">ARUN<span class="text-brand-400">·</span>CHALLA</a>
+    <nav class="ml-auto hidden md:flex gap-6 text-sm text-slate-300">
+      <a href="projects.html" class="hover:text-white">Projects</a>
+      <a href="resume.html" class="hover:text-white">Resume</a>
+      <a href="contact.html" class="hover:text-white">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-4 md:px-6">
+    <h1 class="text-3xl md:text-4xl font-bold">Projects & Case Studies</h1>
+    <p class="mt-3 text-slate-300 max-w-2xl">Templates for your public GitHub repos are included below. Create repos with these names and push the included starter README + code.</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+      <!-- Cards generated statically here to keep it simple -->
+      <a href="https://github.com/<your-username>/cba-dashboard" class="group p-6 rounded-2xl border border-slate-800 hover:border-brand-400 bg-slate-950/60 block">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-semibold group-hover:text-white">Sales & Cost-Benefit Analysis Dashboard</h3>
+            <p class="mt-1 text-slate-300">Executive-ready CBA with scenario modeling</p>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-slate-500 group-hover:text-brand-300"></i>
+        </div>
+        <div class="mt-4 flex flex-wrap gap-2"><span class='text-xs px-2 py-1 rounded-lg border border-slate-700'>Excel</span><span class='text-xs px-2 py-1 rounded-lg border border-slate-700'>VBA</span><span class='text-xs px-2 py-1 rounded-lg border border-slate-700'>Power BI</span></div>
+        <p class="mt-4 text-sm text-slate-400">Automated refresh via VBA; ROI & sensitivity analysis</p>
+      </a>
+    
+      <a href="https://github.com/<your-username>/excel-python-etl" class="group p-6 rounded-2xl border border-slate-800 hover:border-brand-400 bg-slate-950/60 block">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-semibold group-hover:text-white">Excel ⇄ Python Automation Pipeline</h3>
+            <p class="mt-1 text-slate-300">ETL for reporting and daily ops</p>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-slate-500 group-hover:text-brand-300"></i>
+        </div>
+        <div class="mt-4 flex flex-wrap gap-2"><span class='text-xs px-2 py-1 rounded-lg border border-slate-700'>Python</span><span class='text-xs px-2 py-1 rounded-lg border border-slate-700'>pandas</span><span class='text-xs px-2 py-1 rounded-lg border border-slate-700'>openpyxl</span></div>
+        <p class="mt-4 text-sm text-slate-400">Reads/writes .xlsx; cleans/validates; emails results</p>
+      </a>
+    
+      <a href="https://github.com/<your-username>/pricing-quote-generator" class="group p-6 rounded-2xl border border-slate-800 hover:border-brand-400 bg-slate-950/60 block">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-semibold group-hover:text-white">Pricing & Quote Generator</h3>
+            <p class="mt-1 text-slate-300">Configurable pricing with margin guardrails</p>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-slate-500 group-hover:text-brand-300"></i>
+        </div>
+        <div class="mt-4 flex flex-wrap gap-2"><span class='text-xs px-2 py-1 rounded-lg border border-slate-700'>Excel</span><span class='text-xs px-2 py-1 rounded-lg border border-slate-700'>VBA</span></div>
+        <p class="mt-4 text-sm text-slate-400">Auto-quote PDFs; discount rules; audit trail</p>
+      </a>
+    
+      <a href="https://github.com/<your-username>/market-research-playbook" class="group p-6 rounded-2xl border border-slate-800 hover:border-brand-400 bg-slate-950/60 block">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-semibold group-hover:text-white">Market Research Playbook</h3>
+            <p class="mt-1 text-slate-300">Segmentation + TAM/SAM/SOM templates</p>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-slate-500 group-hover:text-brand-300"></i>
+        </div>
+        <div class="mt-4 flex flex-wrap gap-2"><span class='text-xs px-2 py-1 rounded-lg border border-slate-700'>SQL</span><span class='text-xs px-2 py-1 rounded-lg border border-slate-700'>Excel</span><span class='text-xs px-2 py-1 rounded-lg border border-slate-700'>Tableau</span></div>
+        <p class="mt-4 text-sm text-slate-400">Personas, positioning, and KPI boards</p>
+      </a>
+    
+      <a href="https://github.com/<your-username>/ops-kpi-hub" class="group p-6 rounded-2xl border border-slate-800 hover:border-brand-400 bg-slate-950/60 block">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-semibold group-hover:text-white">Operations KPI Hub</h3>
+            <p class="mt-1 text-slate-300">Unified KPIs for post-launch objectives</p>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-slate-500 group-hover:text-brand-300"></i>
+        </div>
+        <div class="mt-4 flex flex-wrap gap-2"><span class='text-xs px-2 py-1 rounded-lg border border-slate-700'>Power BI</span><span class='text-xs px-2 py-1 rounded-lg border border-slate-700'>SQL</span></div>
+        <p class="mt-4 text-sm text-slate-400">Inventory, warranty, demo units data model</p>
+      </a>
+    
+    </div>
+  </div>
+</section>
+
+<footer class="py-8 text-center text-xs text-slate-500">
+  © <span id="year"></span> Arun Challa · Built with Tailwind · Hosted on GitHub Pages
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+
+</body>
+</html>
